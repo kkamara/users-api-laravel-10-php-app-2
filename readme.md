@@ -76,14 +76,13 @@ yarn && yarn build
 * [https://laravel.com/docs/10.x/sail#main-content](https://laravel.com/docs/10.x/sail#main-content)
 
 ```bash
-# php artisan serve
 php artisan serve --port 3000
 ```
 
 ## Api Documentation
 
 ```bash
-php artisan route:list
+php artisan route:list -vvv
 # example output:
 ...
 POST       api/user ............................ login › Api\UserController@login
@@ -95,7 +94,6 @@ POST       api/user/register ................... Api\UserController@register
 ## Run Tests
 
 ```bash
-# php artisan test
 php artisan test --testsuite=Feature
 ```
 
